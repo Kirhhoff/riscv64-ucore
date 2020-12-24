@@ -4,6 +4,7 @@
 #include <defs.h>
 #include <fs.h>
 #include <sfs.h>
+#include <ext2_fs.h>
 
 struct inode;   // abstract structure for an on-disk file (inode.h)
 struct device;  // abstract structure for a device (dev.h)
@@ -34,11 +35,13 @@ struct iobuf;   // kernel or userspace I/O buffer (iobuf.h)
  */
 struct fs {
     union {
-        struct sfs_fs __sfs_info;                   
+        struct sfs_fs __sfs_info;
+        struct ext2_mm_super __ext2_info;
     } fs_info;                                     // filesystem-specific data 
     enum {
         fs_type_sfs_info,
-    } fs_type;                                     // filesystem type 
+        fs_type_ext2_info,
+    } fs_type;                                     // filesystem type
     int (*fs_sync)(struct fs *fs);                 // Flush all dirty buffers to disk 
     struct inode *(*fs_get_root)(struct fs *fs);   // Return root inode of filesystem.
     int (*fs_unmount)(struct fs *fs);              // Attempt unmount of filesystem.

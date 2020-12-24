@@ -53,6 +53,8 @@ add_executable(lab8
         kern/fs/devs/dev_stdout.c
         kern/fs/sfs/bitmap.c
         kern/fs/sfs/bitmap.h
+        kern/fs/sfs/ext2_fs.c
+        kern/fs/sfs/ext2_fs.h
         kern/fs/sfs/sfs.c
         kern/fs/sfs/sfs.h
         kern/fs/sfs/sfs_fs.c

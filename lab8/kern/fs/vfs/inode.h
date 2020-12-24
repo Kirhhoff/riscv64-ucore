@@ -30,10 +30,12 @@ struct inode {
     union {
         struct device __device_info;
         struct sfs_inode __sfs_inode_info;
+        struct ext2_mm_inode __ext2_inode_info;
     } in_info;
     enum {
         inode_type_device_info = 0x1234,
         inode_type_sfs_inode_info,
+        inode_type_ext2_inode_info,
     } in_type;
     int ref_count;
     int open_count;

@@ -1,0 +1,3 @@
+/home/lumin/Documents/riscv64-ucore/lab6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/lumin/Documents/riscv64-ucore/lab6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/lumin/Documents/riscv64-ucore/lab6/cmake-build-debug/CMakeFiles/lab6.dir

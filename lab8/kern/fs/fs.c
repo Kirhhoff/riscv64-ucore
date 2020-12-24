@@ -7,12 +7,15 @@
 #include <sfs.h>
 #include <inode.h>
 #include <assert.h>
+#include <ext2_fs.h>
+
 //called when init_main proc start
 void
 fs_init(void) {
     vfs_init();
     dev_init();
     sfs_init();
+    ext2_test();
 }
 
 void

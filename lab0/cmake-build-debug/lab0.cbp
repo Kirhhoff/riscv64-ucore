@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab0"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab0">
+				<Option output="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/lab0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab0/kern/driver"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab0/kern/mm"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab0/libs"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab0"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab0/fast">
+				<Option output="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/lab0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab0/kern/driver"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab0/kern/mm"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab0/libs"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab0/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/kern/driver/console.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/kern/driver/console.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/kern/init/init.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/kern/libs/stdio.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/kern/mm/memlayout.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/kern/mm/mmu.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/defs.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/error.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/printfmt.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/readline.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/riscv.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/sbi.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/sbi.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/stdarg.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/stdio.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/string.c">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/libs/string.h">
+			<Option target="lab0"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

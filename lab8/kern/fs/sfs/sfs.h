@@ -7,6 +7,14 @@
 #include <sem.h>
 #include <unistd.h>
 
+/* known reserved inodes */
+#define EXT2_BAD_INO 1          // bad blocks inode
+#define EXT2_ROOT_INO 2         // root directory inode
+#define EXT2_ACL_IDX_INO 3      // ACL index inode (deprecated?)
+#define EXT2_ACL_DATA_INO 4     // ACL data inode (deprecated?)
+#define EXT2_BOOT_LOADER_INO 5  // boot loader inode
+#define EXT2_UNDEL_DIR_INO 6    // undelete directory inode
+
 /*
  * Simple FS (SFS) definitions visible to ucore. This covers the on-disk format
  * and is used by tools that work on SFS volumes, such as mksfs.

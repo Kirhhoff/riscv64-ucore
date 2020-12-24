@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab7"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab7">
+				<Option output="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/lab7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/."/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/fs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/init"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/process"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/schedule"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/syscall"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/trap"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/tools"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/user"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/user/libs"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab7"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab7/fast">
+				<Option output="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/lab7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/."/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/fs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/init"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/process"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/schedule"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/syscall"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/kern/trap"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/tools"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/user"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab7/user/libs"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab7/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab7/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/assert.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/kdebug.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/kdebug.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/kmonitor.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/kmonitor.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/panic.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/debug/stab.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/clock.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/clock.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/console.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/console.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/ide.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/ide.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/intr.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/intr.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/kbdreg.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/picirq.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/driver/picirq.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/fs/fs.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/fs/swapfs.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/fs/swapfs.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/init/init.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/libs/readline.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/libs/stdio.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/default_pmm.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/default_pmm.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/kmalloc.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/kmalloc.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/memlayout.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/mmu.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/pmm.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/pmm.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/swap.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/swap.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/swap_fifo.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/swap_fifo.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/vmm.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/mm/vmm.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/process/proc.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/process/proc.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/schedule/default_sched.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/schedule/default_sched_stride.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/schedule/sched.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/schedule/sched.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/check_sync.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/monitor.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/monitor.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/sem.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/sem.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/sync.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/wait.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/sync/wait.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/syscall/syscall.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/syscall/syscall.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/trap/trap.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/kern/trap/trap.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/atomic.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/defs.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/elf.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/error.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/hash.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/list.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/printfmt.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/rand.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/riscv.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/sbi.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/skew_heap.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/stdarg.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/stdio.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/stdlib.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/string.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/string.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/libs/unistd.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/tools/sign.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/tools/vector.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/badarg.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/badsegment.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/divzero.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/exit.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/faultread.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/faultreadkernel.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/forktest.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/forktree.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/hello.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/panic.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/stdio.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/syscall.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/syscall.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/ulib.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/ulib.h">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/libs/umain.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/matrix.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/pgdir.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/priority.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/sleep.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/sleepkill.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/softint.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/spin.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/testbss.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/waitkill.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/user/yield.c">
+			<Option target="lab7"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab3">
+				<Option output="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/lab3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/."/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/fs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/init"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/sync"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/trap"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/tools"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab3/fast">
+				<Option output="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/lab3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/."/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/fs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/init"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/sync"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/kern/trap"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/libs"/>
+					<Add directory="/home/lumin/Documents/riscv64-ucore/lab3/tools"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lumin/Documents/riscv64-ucore/lab3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/assert.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/kdebug.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/kdebug.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/kmonitor.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/kmonitor.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/panic.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/debug/stab.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/clock.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/clock.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/console.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/console.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/ide.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/ide.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/intr.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/driver/intr.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/fs/fs.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/fs/swapfs.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/fs/swapfs.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/init/init.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/libs/stdio.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/default_pmm.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/default_pmm.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/memlayout.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/mmu.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/pmm.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/pmm.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/swap.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/swap.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/swap_clock.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/swap_clock.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/swap_fifo.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/swap_fifo.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/vmm.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/mm/vmm.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/sync/sync.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/trap/trap.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/kern/trap/trap.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/atomic.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/defs.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/error.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/list.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/printfmt.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/rand.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/readline.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/riscv.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/sbi.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/stdarg.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/stdio.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/stdlib.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/string.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/libs/string.h">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/tools/sign.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/tools/vector.c">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="/home/lumin/Documents/riscv64-ucore/lab3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
