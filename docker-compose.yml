@@ -1,0 +1,9 @@
+version: "3.8"
+
+services: 
+  riscv-ucore:
+    image: riscv-ucore
+    working_dir: /home/riscv64-ucore
+    volumes: 
+      - ./:/home/riscv64-ucore
+    privileged: true

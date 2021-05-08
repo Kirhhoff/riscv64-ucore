@@ -72,7 +72,7 @@ vma_create(uintptr_t vm_start, uintptr_t vm_end, uint32_t vm_flags) {
     return vma;
 }
 
-
+#include <sbi.h>
 // find_vma - find a vma  (vma->vm_start <= addr <= vma_vm_end)
 struct vma_struct *
 find_vma(struct mm_struct *mm, uintptr_t addr) {
@@ -84,6 +84,10 @@ find_vma(struct mm_struct *mm, uintptr_t addr) {
                 list_entry_t *list = &(mm->mmap_list), *le = list;
                 while ((le = list_next(le)) != list) {
                     vma = le2vma(le, list_link);
+                    if (current) {
+                        if (current->tf->epc >= 0x800000 && current->tf->epc <= 0x810000)
+                            cprintf("vma: [0x%lx - 0x%lx]\n", vma->vm_start, vma->vm_end);
+                    }
                     if (vma->vm_start<=addr && addr < vma->vm_end) {
                         found = 1;
                         break;
@@ -398,13 +402,17 @@ do_pgfault(struct mm_struct *mm, uint_t error_code, uintptr_t addr) {
     int ret = -E_INVAL;
     //try to find a vma which include addr
     struct vma_struct *vma = find_vma(mm, addr);
-
+    
+    cprintf("before vma test\n");
+    
     pgfault_num++;
     //If the addr is in the range of a mm's vma?
     if (vma == NULL || vma->vm_start > addr) {
         cprintf("not valid addr %x, and  can not find it in vma\n", addr);
         goto failed;
     }
+
+    cprintf("vma test pass\n");
 
     /* IF (write an existed addr ) OR
      *    (write an non_existed addr && addr is writable) OR
@@ -440,11 +448,16 @@ do_pgfault(struct mm_struct *mm, uint_t error_code, uintptr_t addr) {
     */
     // try to find a pte, if pte's PT(Page Table) isn't existed, then create a PT.
     // (notice the 3th parameter '1')
+    
+    cprintf("before ptep test\n");
+
     if ((ptep = get_pte(mm->pgdir, addr, 1)) == NULL) {
         cprintf("get_pte in do_pgfault failed\n");
         goto failed;
     }
-    
+
+    cprintf("ptep test pass\n");
+
     if (*ptep == 0) { // if the phy addr isn't exist, then alloc a page & map the phy addr with logical addr
         if (pgdir_alloc_page(mm->pgdir, addr, perm) == NULL) {
             cprintf("pgdir_alloc_page in do_pgfault failed\n");

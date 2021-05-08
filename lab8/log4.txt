@@ -1,0 +1,3 @@
+python3 tools/kflash.py -p /dev/ttyUSB0 -b 1500000 bin/kernel.img
+[32m[1m[INFO][0m COM Port Selected Manually:  /dev/ttyUSB0 [0m
+[Errno 6] could not open port /dev/ttyUSB0: [Errno 6] No such device or address: '/dev/ttyUSB0'

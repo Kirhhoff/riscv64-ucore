@@ -49,9 +49,10 @@ print_trapframe(struct trapframe *tf) {
     cprintf("trapframe at %p\n", tf);
     print_regs(&tf->gpr);
     cprintf("  status   0x%08x\n", tf->status);
-    cprintf("  epc      0x%08x\n", tf->epc);
-    cprintf("  tval 0x%08x\n", tf->tval);
+    cprintf("  epc      0x%lx\n", tf->epc);
+    cprintf("  tval 0x%lx\n", tf->tval);
     cprintf("  cause    0x%08x\n", tf->cause);
+    cprintf("  current 0x%lx\n", current);
 }
 
 void print_regs(struct pushregs* gpr) {
@@ -208,6 +209,11 @@ void exception_handler(struct trapframe *tf) {
             break;
         case CAUSE_STORE_ACCESS:
             cprintf("Store/AMO access fault\n");
+            print_trapframe(tf);
+            uint32_t* addr = tf->epc;
+            if ((uint64_t)addr >= 0x800000 && (uint64_t)addr <= 0x810000)
+                cprintf("addr_ins4: 0x%x addr+4_ins4: 0x%x", *addr, *(addr+1));
+            cprintf("well this is ok\n");
             if ((ret = pgfault_handler(tf)) != 0) {
                 print_trapframe(tf);
                 panic("handle pgfault failed. %e\n", ret);

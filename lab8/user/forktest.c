@@ -1,7 +1,7 @@
 #include <ulib.h>
 #include <stdio.h>
 
-const int max_child = 32;
+const int max_child = 6;
 
 int
 main(void) {

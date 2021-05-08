@@ -120,6 +120,14 @@ default_alloc_pages(size_t n) {
         nr_free -= n;
         ClearPageProperty(page);
     }
+    // if (page != NULL)
+    // cprintf("[LOG:] alloc idx,n = [0x%lx, 0x%lx] ppn = [0x%lx - 0x%lx] pa [0x%lx - 0x%lx] va [0x%lx - 0x%lx] after alloc nfree = %ld\n",
+    //         page - pages, n,
+    //         page2ppn(page), page2ppn(page + n - 1),
+    //         page2pa(page), page2pa(page + n - 1),
+    //         page2kva(page), page2kva(page + n - 1),
+    //         nr_free);
+    
     return page;
 }
 
@@ -136,6 +144,14 @@ default_free_pages(struct Page *base, size_t n) {
     SetPageProperty(base);
     nr_free += n;
 
+    // cprintf("[LOG:] free idx,n = [0x%lx, 0x%lx] ppn = [0x%lx - 0x%lx] pa [0x%lx - 0x%lx] va [0x%lx - 0x%lx] after free nfree = %ld\n",
+    //         base - pages, n,
+    //         page2ppn(base), page2ppn(base + n - 1),
+    //         page2pa(base), page2pa(base + n - 1),
+    //         page2kva(base), page2kva(base + n - 1),
+    //         nr_free);
+    // cprintf("[LOG] after free nfree = %ld\n", nr_free);
+    
     if (list_empty(&free_list)) {
         list_add(&free_list, &(base->page_link));
     } else {

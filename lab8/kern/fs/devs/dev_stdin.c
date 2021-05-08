@@ -23,7 +23,7 @@ static wait_queue_t __wait_queue, *wait_queue = &__wait_queue;
 void
 dev_stdin_write(char c) {
     bool intr_flag;
-    if (c != '\0') {
+    // if (c != '\0') {
         local_intr_save(intr_flag);
         {
             stdin_buffer[p_wpos % STDIN_BUFSIZE] = c;
@@ -32,7 +32,7 @@ dev_stdin_write(char c) {
             }
         }
         local_intr_restore(intr_flag);
-    }
+    // }
 }
 
 static int
@@ -118,13 +118,17 @@ stdin_device_init(struct device *dev) {
 void dev_intr() {
     volatile uint32_t *hart0m_claim = (volatile uint32_t *)UARTHS_IRQ;
     volatile uint32_t *reg = (volatile uint32_t *)UARTHS_DATA_REG;
+    // bool intr_flag;
+    // local_intr_save(intr_flag);
     uint32_t c, irq = *hart0m_claim;
     if (irq == 0x21){
         c = *reg;
         if (c <= 0xFF)
             dev_stdin_write(c);
-    }
+    } else
+        sbi_console_putchar('G');
     *hart0m_claim = irq;
+    // local_intr_restore(intr_flag);
 }
 
 void

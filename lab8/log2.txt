@@ -1,0 +1,281 @@
+python3 tools/kflash.py -p /dev/ttyUSB0 -b 1500000 bin/kernel.img
+[32m[1m[INFO][0m COM Port Selected Manually:  /dev/ttyUSB0 [0m
+[32m[1m[INFO][0m Default baudrate is 115200 , later it may be changed to the value you set. [0m
+[32m[1m[INFO][0m Trying to Enter the ISP Mode... [0m
+.
+[32m[1m[INFO][0m Automatically detected dan/bit/trainer [0m
+
+[32m[1m[INFO][0m Greeting Message Detected, Start Downloading ISP [0m
+Downloading ISP: |===----------------------------------------------------------------------------------------| 3.4% Downloading ISP: |======-------------------------------------------------------------------------------------| 6.9% Downloading ISP: |=========----------------------------------------------------------------------------------| 10.3% Downloading ISP: |============-------------------------------------------------------------------------------| 13.8% Downloading ISP: |===============----------------------------------------------------------------------------| 17.2% Downloading ISP: |==================-------------------------------------------------------------------------| 20.7% Downloading ISP: |=====================----------------------------------------------------------------------| 24.1% Downloading ISP: |=========================------------------------------------------------------------------| 27.6% Downloading ISP: |============================---------------------------------------------------------------| 31.0% Downloading ISP: |===============================------------------------------------------------------------| 34.5% Downloading ISP: |==================================---------------------------------------------------------| 37.9% 10kiB/sDownloading ISP: |=====================================------------------------------------------------------| 41.4% 10kiB/sDownloading ISP: |========================================---------------------------------------------------| 44.8% 10kiB/sDownloading ISP: |===========================================------------------------------------------------| 48.3% 10kiB/sDownloading ISP: |===============================================--------------------------------------------| 51.7% 10kiB/sDownloading ISP: |==================================================-----------------------------------------| 55.2% 10kiB/sDownloading ISP: |=====================================================--------------------------------------| 58.6% 10kiB/sDownloading ISP: |========================================================-----------------------------------| 62.1% 10kiB/sDownloading ISP: |===========================================================--------------------------------| 65.5% 10kiB/sDownloading ISP: |==============================================================-----------------------------| 69.0% 10kiB/sDownloading ISP: |=================================================================--------------------------| 72.4% 10kiB/sDownloading ISP: |=====================================================================----------------------| 75.9% 10kiB/sDownloading ISP: |========================================================================-------------------| 79.3% 10kiB/sDownloading ISP: |===========================================================================----------------| 82.8% 10kiB/sDownloading ISP: |==============================================================================-------------| 86.2% 10kiB/sDownloading ISP: |=================================================================================----------| 89.7% 10kiB/sDownloading ISP: |====================================================================================-------| 93.1% 10kiB/sDownloading ISP: |=======================================================================================----| 96.6% 10kiB/sDownloading ISP: |===========================================================================================| 100.0% 10kiB/s
+[32m[1m[INFO][0m Booting From 0x80000000 [0m
+[32m[1m[INFO][0m Wait For 0.1 second for ISP to Boot [0m
+[32m[1m[INFO][0m Boot to Flashmode Successfully [0m
+[32m[1m[INFO][0m Selected Baudrate:  1500000 [0m
+[32m[1m[INFO][0m Baudrate changed, greeting with ISP again ...  [0m
+[32m[1m[INFO][0m Boot to Flashmode Successfully [0m
+[32m[1m[INFO][0m Selected Flash:  On-Board [0m
+[32m[1m[INFO][0m Initialization flash Successfully [0m
+------------------------------
+ok
+------------------------------
+Programming BIN: |=======------------------------------------------------------------------------------------| 8.7% 60kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |===============----------------------------------------------------------------------------| 17.5% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |=======================--------------------------------------------------------------------| 26.2% 60kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |===============================------------------------------------------------------------| 35.0% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |=======================================----------------------------------------------------| 43.7% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |===============================================--------------------------------------------| 52.4% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |=======================================================------------------------------------| 61.2% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |===============================================================----------------------------| 69.9% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |=======================================================================--------------------| 78.7% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |===============================================================================------------| 87.4% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |=======================================================================================----| 96.1% 61kiB/s------------------------------
+ok
+------------------------------
+Programming BIN: |===========================================================================================| 100.5% 61kiB/s[32m[1m[INFO][0m Rebooting... [0m
+miniterm --eol LF --dtr 0 --rts 0 --filter direct /dev/ttyUSB0 115200
+[rustsbi] Version 0.1.0
+.______       __    __      _______.___________.  _______..______   __
+|   _  \     |  |  |  |    /       |           | /       ||   _  \ |  |
+|  |_)  |    |  |  |  |   |   (----`---|  |----`|   (----`|  |_)  ||  |
+|      /     |  |  |  |    \   \       |  |      \   \    |   _  < |  |
+|  |\  \----.|  `--'  |.----)   |      |  |  .----)   |   |  |_)  ||  |
+| _| `._____| \______/ |_______/       |__|  |_______/    |______/ |__|
+
+[rustsbi] Platform: K210
+[rustsbi] misa: RV64ACDFIMSU
+[rustsbi] mideleg: 0x222
+[rustsbi] medeleg: 0x1ab
+[rustsbi] Kernel entry: 0x80020000
+(THU.CST) os is loading ...
+
+Special kernel symbols:
+  entry  0xc0020032 (virtual)
+  etext  0xc002e6e2 (virtual)
+  edata  0xc00b70a8 (virtual)
+  end    0xc00bca68 (virtual)
+Kernel executable memory footprint: 627KB
+memory management: default_pmm_manager
+physcial memory map:
+  memory: 0x005e0000, [0x80020000, 0x805fffff].
+vapaofset is 18446744070488326144
+check_alloc_page() succeeded!
+Page table directory switch succeeded!
+Kernel stack guardians set succeeded!
+check_pgdir() succeeded!
+check_boot_pgdir() succeeded!
+use SLOB allocator
+kmalloc_init() succeeded!
+Successfully initialize SD card!
+check_vma_struct() succeeded!
+Store/AMO access fault
+page falut at 0xc0000100: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+check_pgfault() succeeded!
+check_vmm() succeeded.
+sched class: stride_scheduler
+Initrd: 0xc003a000 - 0xc0041cff, size: 0x00007d00
+Initrd: 0xc0041d00 - 0xc00b6fff, size: 0x00075300
+SWAP: manager = fifo swap manager
+BEGIN check_swap: count 1, total 1265
+setup Page Table for vaddr 0XC0001000, so alloc two pages
+setup Page Table vaddr 0~4MB OVER!
+set up init env for check_swap begin!
+Store/AMO access fault
+page falut at 0xc0001000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+Store/AMO access fault
+page falut at 0xc0002000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+Store/AMO access fault
+page falut at 0xc0003000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+Store/AMO access fault
+page falut at 0xc0004000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+set up init env for check_swap over!
+write Virt Page c in fifo_check_swap
+write Virt Page a in fifo_check_swap
+write Virt Page d in fifo_check_swap
+write Virt Page b in fifo_check_swap
+write Virt Page e in fifo_check_swap
+Store/AMO access fault
+page falut at 0xc0005000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0001000 to disk swap entry 786434
+write Virt Page b in fifo_check_swap
+write Virt Page a in fifo_check_swap
+Store/AMO access fault
+page falut at 0xc0001000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0002000 to disk swap entry 786435
+swap_in: load disk swap entry 786434 with swap_page in vadr 0xc0001000
+write Virt Page b in fifo_check_swap
+Store/AMO access fault
+page falut at 0xc0002000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0003000 to disk swap entry 786436
+swap_in: load disk swap entry 786435 with swap_page in vadr 0xc0002000
+write Virt Page c in fifo_check_swap
+Store/AMO access fault
+page falut at 0xc0003000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0004000 to disk swap entry 786437
+swap_in: load disk swap entry 786436 with swap_page in vadr 0xc0003000
+write Virt Page d in fifo_check_swap
+Store/AMO access fault
+page falut at 0xc0004000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0005000 to disk swap entry 786438
+swap_in: load disk swap entry 786437 with swap_page in vadr 0xc0004000
+write Virt Page e in fifo_check_swap
+Store/AMO access fault
+page falut at 0xc0005000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0001000 to disk swap entry 786434
+swap_in: load disk swap entry 786438 with swap_page in vadr 0xc0005000
+write Virt Page a in fifo_check_swap
+Load access fault
+page falut at 0xc0001000: K/R
+before vma test
+vma test pass
+before ptep test
+ptep test pass
+swap_out: i 0, store page in vaddr 0xc0002000 to disk swap entry 786435
+swap_in: load disk swap entry 786434 with swap_page in vadr 0xc0001000
+check_swap() succeeded!
+sfs: mount: 'simple file system' (106/11/117)
+vfs: mount disk0.
+++ setup timer interrupts
+kernel_execve: pid = 2, name = "sh".
+Breakpoint
+vma: [0x800000 - 0x802000]
+user sh is running!!!
+vma: [0x800000 - 0x802000]
+vma: [0x802000 - 0x806000]
+vma: [0x7ff00000 - 0x80000000]
+$ matrix
+vma: [0x800000 - 0x802000]
+vma: [0x802000 - 0x806000]
+vma: [0x800000 - 0x801000]
+vma: [0x800000 - 0x801000]
+vma: [0x801000 - 0x802000]
+vma: [0x800000 - 0x801000]
+pid 4 is running (1100 times)!.
+pid 4 done!.
+pid 6 is running (1400 times)!.
+pid 6 done!.
+pid 8 is running (5900 times)!.
+pid 10 is running (23500 times)!.
+pid 5 is running (1100 times)!.
+pid 5 done!.
+pid 12 is running (3500 times)!.
+fork ok.
+pid 15 is running (5900 times)!.
+pid 7 is running (2600 times)!.
+pid 16 is running (26600 times)!.
+pid 18 is running (26600 times)!.
+pid 20 is running (37100 times)!.
+pid 22 is running (3500 times)!.
+pid 23 is running (33400 times)!.
+pid 9 is running (13100 times)!.
+pid 11 is running (41000 times)!.
+pid 13 is running (15400 times)!.
+pid 17 is running (3500 times)!.
+pid 19 is running (5900 times)!.
+pid 21 is running (15400 times)!.
+pid 14 is running (41000 times)!.
+pid 24 is running (17900 times)!.
+pid 12 done!.
+pid 22 done!.
+pid 7 done!.
+pid 17 done!.
+pid 19 done!.
+pid 8 done!.
+pid 15 done!.
+pid 9 done!.
+pid 13 done!.
+pid 21 done!.
+pid 24 done!.
+pid 10 done!.
+pid 18 done!.
+pid 16 done!.
+pid 23 done!.
+pid 20 done!.
+pid 11 done!.
+pid 14 done!.
+matrix pass.
+$ /home/lum/Documents/riscv64-ucore/lab8/log.txt                                       sleepkill
+vma: [0x800000 - 0x802000]
+vma: [0x802000 - 0x806000]
+error: -3 - invalid parameter
+$ sk l  sleepkill
+vma: [0x800000 - 0x802000]
+vma: [0x802000 - 0x806000]
+vma: [0x800000 - 0x801000]
+vma: [0x800000 - 0x801000]
+sleepkill pass.
+$ sleepkill
+vma: [0x800000 - 0x802000]
+vma: [0x802000 - 0x806000]
+vma: [0x800000 - 0x801000]
+vma: [0x800000 - 0x801000]
+sleepkill pass.
+$ spin
+vma: [0x800000 - 0x802000]
+vma: [0x802000 - 0x806000]
+vma: [0x800000 - 0x801000]
+vma: [0x800000 - 0x801000]
+[rustsbi] panicked at 'invalid instruction, mepc: 0000000000800700, instruction: ed31b81f', platform/k210/src/main.rs:522:17
