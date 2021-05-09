@@ -189,6 +189,13 @@ syscall(void) {
         }
     }
     print_trapframe(tf);
+    cprintf("params: \n"
+            "\t[0] = 0x%lx\n"
+            "\t[1] = 0x%lx\n"
+            "\t[2] = 0x%lx\n"
+            "\t[3] = 0x%lx\n"
+            "\t[4] = 0x%lx\n",
+            tf->gpr.a1, tf->gpr.a2, tf->gpr.a3, tf->gpr.a4, tf->gpr.a5);
     panic("undefined syscall %d, pid = %d, name = %s.\n",
             num, current->pid, current->name);
 }

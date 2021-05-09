@@ -498,7 +498,7 @@ do_fork(uint32_t clone_flags, uintptr_t stack, struct trapframe *tf) {
         set_links(proc);
     }
     local_intr_restore(intr_flag);
-
+    cprintf("pid = %d get allocated\n", proc->pid);
     wakeup_proc(proc);
 
     ret = proc->pid;
@@ -521,6 +521,7 @@ bad_fork_cleanup_proc:
 //   3. call scheduler to switch to other process
 int
 do_exit(int error_code) {
+    cprintf("pid = %d start exit\n", current->pid);
     if (current == idleproc) {
         panic("idleproc exit.\n");
     }
@@ -530,6 +531,7 @@ do_exit(int error_code) {
     struct mm_struct *mm = current->mm;
     if (mm != NULL) {
         lcr3(boot_cr3);
+        flush_tlb();
         if (mm_count_dec(mm) == 0) {
             exit_mmap(mm);
             put_pgdir(mm);
@@ -538,6 +540,7 @@ do_exit(int error_code) {
         current->mm = NULL;
         put_files(current);
     }
+    // cprintf("pid = %d becomes zombie\n", current->pid);
     current->state = PROC_ZOMBIE;
     current->exit_code = error_code;
     bool intr_flag;
@@ -846,6 +849,7 @@ do_execve(const char *name, int argc, const char **argv) {
     }
     if (mm != NULL) {
         lcr3(boot_cr3);
+        flush_tlb();
         if (mm_count_dec(mm) == 0) {
             exit_mmap(mm);
             put_pgdir(mm);

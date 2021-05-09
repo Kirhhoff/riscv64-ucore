@@ -19,7 +19,7 @@
 #define SPI1_BASE_ADDR      (0x53000000U)
 #define SPI3_BASE_ADDR      (0x54000000U)
 
-#define IO_REGION_NUM       (4)
+#define IO_REGION_NUM       (3)
 #define IO_REGION_START0    (0x0C200000U)
 #define IO_REGION_END0      (0x0C201000U)
 #define IO_REGION_START1    (0x38000000U)
@@ -27,7 +27,7 @@
 #define IO_REGION_START2    (0x50240000U)
 #define IO_REGION_END2      (0x55000000U)
 #define IO_REGION_START3    (0x80000000U)
-#define IO_REGION_END3      (0x80000000U + PTSIZE)
+#define IO_REGION_END3      (0x800C0000U)
 
 typedef struct
 {

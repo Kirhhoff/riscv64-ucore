@@ -6,6 +6,7 @@
 #include <lock.h>
 void
 exit(int error_code) {
+    cprintf("before sys_exit : %d\n", error_code);
     sys_exit(error_code);
     cprintf("BUG: exit failed.\n");
     while (1);

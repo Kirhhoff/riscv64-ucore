@@ -35,7 +35,7 @@ kern_init(void) {
 
     pmm_init();                 // init physical memory management
 
-    sd_init();                  // init SD card driver
+    // sd_init();                  // init SD card driver
 
     pic_init();                 // init interrupt controller
     idt_init();                 // init interrupt descriptor table

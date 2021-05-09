@@ -198,6 +198,17 @@ void exception_handler(struct trapframe *tf) {
             break;
         case CAUSE_LOAD_ACCESS:
             cprintf("Load access fault\n");
+            if (current && tf->epc >= 0x800000 && tf->epc <= 0x810000) {
+                pte_t* pgdir = current->mm->pgdir;
+                for (int i = 0; i < 512; i++) {
+                    if (pgdir[i] != 0) {
+                        cprintf("[%d] = [0x%lx] ", i, pgdir[i]);
+                        // cprintf("[0x%lx - 0x%lx]\n", i * )
+                    }
+                }
+                cprintf("mm->pgdir: 0x%lx cr3: 0x%lx kern_pgdir: 0x%lx\n",
+                    pgdir, read_csr(satp), boot_pgdir);
+            }
             if ((ret = pgfault_handler(tf)) != 0) {
                 print_trapframe(tf);
                 panic("handle pgfault failed. %e\n", ret);
@@ -241,6 +252,14 @@ void exception_handler(struct trapframe *tf) {
             break;
         case CAUSE_STORE_PAGE_FAULT:
             cprintf("Store/AMO page fault\n");
+            if (current && tf->epc >= 0x80000000 && tf->epc <= 0x81000000) {
+                pte_t* pgdir = current->mm->pgdir;
+                for (int i = 0; i < 512; i++) {
+                    if (pgdir[i] != 0) {
+                        cprintf("[%d] = [0x%lx]\n", i, pgdir[i]);
+                    }
+                }
+            }
             if ((ret = pgfault_handler(tf)) != 0) {
                 print_trapframe(tf);
                 panic("handle pgfault failed. %e\n", ret);
